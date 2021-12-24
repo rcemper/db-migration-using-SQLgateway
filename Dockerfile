@@ -3,8 +3,6 @@ ARG IMAGE=intersystemsdc/iris-community
 FROM $IMAGE
 
 USER root   
-## add git
-RUN apt update && apt-get -y install git
         
 WORKDIR /opt/irisbuild
 RUN chown ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/irisbuild
