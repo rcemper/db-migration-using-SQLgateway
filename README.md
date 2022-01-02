@@ -1,8 +1,9 @@
 # migration-using-SQLgateway
 Sample repository to show how to migrate from PostgreSQL to InterSystems IRIS    
-**using SQLgateway**  
+**using SQLgateway** in differnce to using an external toll as DBeaver.   
+I try especially to demonstrate the comport in fitting underlaying limitations. 
 
-# Credits
+## Credits
 0. OEX package [migration-pg-iris-dataset](https://openexchange.intersystems.com/package/migration-pg-iris-dataset) 
 provided by [YURI MARX PEREIRA GOMES](https://openexchange.intersystems.com/user/YURI%20MARX%20PEREIRA%20GOMES/QKGV1uPuZml09uNsC8bNKcRQj8)   
     - Special thanks as this was an excellent base to start off.
@@ -12,7 +13,7 @@ provided by [YURI MARX PEREIRA GOMES](https://openexchange.intersystems.com/user
     - https://github.com/jdaarevalo/docker_postgres_with_data
     - https://github.com/intersystems-community/iris-docker-zpm-usage-template
 
-# to run
+## How to run
 1. Build
 ```
 docker-compose build
@@ -33,4 +34,12 @@ docker-compose up -d
         - database: user 
         - port: 1972 
         - username: _SYSTEM 
-        - password: SYS
+        - password: SYS    
+
+4. SQLgateway is installed during Docker build and the required   
+   jdbcdriver for Linux is included in this repo 
+   
+## How to test
+All migration actions can run directly from SMP.
+1. Verify the gateway connection
+1. creating therr target tables  
