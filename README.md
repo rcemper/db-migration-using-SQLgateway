@@ -40,7 +40,8 @@ postgres_1  | 2022-01-02 15:37:27.654 UTC [1] LOG:  database system is ready to 
         - password: SYS    
 
 4. SQLgateway is installed during Docker build and the required   
-   jdbcdriver for Linux is included in this repo 
+   jdbcdriver for Linux is included in this repo   
+   In order to make this demo faster, size of tables to migrate have been shrinked a bit.    
 ## How to test ##
 All migration actions can be executed directly from SMP.   
 1. Verify the gateway connection in    
