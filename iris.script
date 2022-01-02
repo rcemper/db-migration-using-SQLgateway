@@ -12,7 +12,7 @@
     set gty.driver="org.postgresql.Driver"
     set gty.isJDBC=1
     set sc=gty.%Save()
-    ZWRITE gty
+    ZWRITE gty,sc
     ;
     zn "USER"
     ; use your module here instead of csvgen
