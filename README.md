@@ -46,7 +46,9 @@ All migration actions can be executed directly from SMP.
  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty02.jpg)    
    - and **Test Connection**    
  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty03.jpg)    
-   - verify **Connection successful**   
+   - verify **Connection successful**    
+   - Be patient at this point. Prostgres Container sometimes take quite some time to talk to you.   
+     wait a little bit, reload the page in browser and try the test again.      
    
 2. Identifying the source tables. In SMP > Change to Namespace USER   
   then step to SMP >Explorers >SQL >Wizards > Data Migration   
