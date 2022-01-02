@@ -84,11 +84,11 @@ All migration actions can be executed directly from SMP.
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty09.jpg)   
   All 8 tables are visible and show meaningful columns
   
-8. Selecting a table and click on  **OpenTable** shows resonable contents   
+8. Selecting a table and clicking on **OpenTable** shows resonable contents   
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty10.jpg)   
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty11.jpg)
   
-9. A look into the related generates Class Defnitions confirms the result and successful completion.
+9. A look into the related generated Class Defnitions confirms the result and successful completion.
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty12.jpg)
 
   [Article on DC](https://community.intersystems.com/post/db-migration-using-sqlgateway)
