@@ -1,17 +1,20 @@
-    ;do $System.OBJ.LoadDir("/opt/irisbuild/src","ck",,1)
+       ;do $System.OBJ.LoadDir("/opt/irisbuild/src","ck",,1)
 
     zn "%SYS"
     Do ##class(Security.Users).UnExpireUserPasswords("*")
     ;
     set gty=##class(%SQLConnection).%New()
     set gty.Name="postgres"
-    set gty.URL="jdbc:postgresql://localhost:5438/"
+    set gty.URL="jdbc:postgresql://postgres:5432/"
     set gty.Usr="postgres"
+	set gty.pwd="postgres"
     set gty.classpath="/opt/irisapp/jdbc/postgresql-42.3.1.jar"
+	set gty.driver="org.postgresql.Driver"
     set gty.isJDBC=1
     set sc=gty.%Save()
-    ZWRITE
+    ZWRITE gty
     ;
     zn "USER"
     ; use your module here instead of csvgen
     halt
+
