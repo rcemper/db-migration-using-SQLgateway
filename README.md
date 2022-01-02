@@ -1,4 +1,4 @@
-# migration-using-SQLgateway
+#db- migration-using-SQLgateway
 Sample repository to show how to migrate from PostgreSQL to InterSystems IRIS    
 **using SQLgateway** in differnce to using an external tool as DBeaver or similar.   
 I try especially to demonstrate the comfort in fitting underlaying naming limitations. 
