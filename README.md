@@ -70,9 +70,9 @@ All migration actions can be executed directly from SMP.
 4. Identify target but change schema to be OEX compatible from **public** to **dc_public**   
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty06.jpg)
   - don't forget to click **change all**    
-  - we migrate Definions and Data so both sides are selected   
+  - we migrate Definitions and Data so both sides are selected   
 
-5. sSkipping special setting we use defaults we start the task in background
+5. Skipping special setting we use defaults we start the task in background      
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty07.jpg) 
   
 6. Now we check the results and see everything was working whout Errors
