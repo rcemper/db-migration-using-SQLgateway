@@ -46,4 +46,39 @@ All migration actions can be executed directly from SMP.
  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty03.jpg)    
    - verify **Connection successful**   
    
-2. Identifying the source tables  
+2. Identifying the source tables. In SMP > Change to Namespace USER   
+  then step to SMP >Explorers >SQL >Wizards > Data Migration   
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty04.jpg)
+  
+3. Set required import parameters  
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty05.jpg)
+  -  Destination Namespace   
+  -  Type = TABLE   
+  -  Gateway = postgres ; now the first connection is estabished and you select 
+  -  Schema = public
+  -  Tables to migrate = all   
+
+4. Identify target but change schema to be OEX compatible from **public** to **dc_public**   
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty06.jpg)
+  - don't forget to click **change all**    
+  - we migrate Definions and Data so both sides are selected   
+
+5. sSkipping special setting we use defaults we start the task in background
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty07.jpg) 
+  
+6. Now we chech the results and see everything was working whout Errors
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty08.jpg)
+  You might see errors if tables depend on content not yet migrated.  
+  
+7. We terminate the Migraton Wizzard and return to normal table view filtered by **dc\***
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty09.jpg)   
+  All 2 tables are visible and show meaningful columns
+  
+8. Selecting a table and click on  **OpenTable** shows resonable contents   
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty10.jpg)   
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty11.jpg)
+  
+9. A look into the related generates Class Defnitions confirms the result and successful completion.
+  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty12.jpg)
+
+  [Article on DC](https://community.intersystems.com/post/db-migration-using-sqlgateway)
