@@ -80,9 +80,9 @@ All migration actions can be executed directly from SMP.
   You might see errors if tables depend on content not yet migrated.   
   And wait for completions until the status shows **Done** 
   
-7. We terminate the Migraton Wizzard and return to normal table view filtered by **dc\***
+7. We terminate the Migration Wizzard and return to normal table view filtered by **dc\***
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty09.jpg)   
-  All 2 tables are visible and show meaningful columns
+  All 8 tables are visible and show meaningful columns
   
 8. Selecting a table and click on  **OpenTable** shows resonable contents   
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty10.jpg)   
