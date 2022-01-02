@@ -21,6 +21,10 @@ docker-compose build
 ```
 docker-compose up
 ```
+   Wait for confirmatin from postgres container:  **ready to accept connections**
+````
+   postgres_1  | 2022-01-02 15:37:27.654 UTC [1] LOG:  database system is ready to accept connections
+````
 3. Use DBeaver to connect to the databases
     - **Connection to PostgreSQL**: 
         - host: localhost 
