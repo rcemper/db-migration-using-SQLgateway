@@ -38,5 +38,7 @@ docker-compose up -d
    jdbcdriver for Linux is included in this repo 
 ## How to test
 All migration actions can be executed directly from SMP.
-1. Verify the gateway connection
-2. Creating therr target tables  
+1. Verify the gateway connection   
+ ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty01.jpg)   
+
+2. Identifying teh source tables  
