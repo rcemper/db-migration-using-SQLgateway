@@ -75,10 +75,10 @@ All migration actions can be executed directly from SMP.
 5. Skipping special setting we use defaults we start the task in background      
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty07.jpg) 
   
-6. Now we check the results and see everything was working whout Errors
+6. Now we check the results and see everything was working without Errors
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty08.jpg)    
   You might see errors if tables depend on content not yet migrated.   
-  And wait for completions until the satus shows **Done** 
+  And wait for completions until the status shows **Done** 
   
 7. We terminate the Migraton Wizzard and return to normal table view filtered by **dc\***
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty09.jpg)   
