@@ -2,8 +2,16 @@
 
     zn "%SYS"
     Do ##class(Security.Users).UnExpireUserPasswords("*")
-
+    ;
+    set gty=##class(%SQLConnection).%New()
+    set gty.Name="postgres"
+    set gty.URL="jdbc:postgresql://localhost:5438/"
+    set gty.Usr="postgres"
+    set gty.classpath="/opt/irisapp/jdbs/postgresql-42.3.1.jar"
+    set gty.isJDBC=1
+    set sc=gty.%Save()
+    ZWRITE
+    ;
     zn "USER"
     ; use your module here instead of csvgen
-    zpm "install csvgen -v":1:1
     halt
