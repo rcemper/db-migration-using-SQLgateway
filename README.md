@@ -17,9 +17,9 @@ provided by [YURI MARX PEREIRA GOMES](https://openexchange.intersystems.com/user
 ```
 docker-compose build
 ```
-2. Run
+2. Run it in foreground. Sometimes container start is slower than estimated.  
 ```
-docker-compose up -d
+docker-compose up
 ```
 3. Use DBeaver to connect to the databases
     - **Connection to PostgreSQL**: 
