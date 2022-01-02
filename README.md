@@ -63,7 +63,7 @@ All migration actions can be executed directly from SMP.
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty05.jpg)
   -  Destination Namespace   
   -  Type = TABLE   
-  -  Gateway = postgres ; now the first connection is estabished and you select 
+  -  Gateway = postgres ; now the first connection is established and you select 
   -  Schema = public
   -  Tables to migrate = all   
 
