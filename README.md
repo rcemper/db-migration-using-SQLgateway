@@ -92,3 +92,11 @@ All migration actions can be executed directly from SMP.
   ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty12.jpg)
 
   [Article on DC](https://community.intersystems.com/post/db-migration-using-sqlgateway)
+
+[Demo Server SMP](https://migration-using-sqlgty.community.intersystems.com/csp/sys/UtilHome.csp)   
+[Demo Server WebTerminal](https://migration-using-sqlgty.community.intersystems.com/terminal/)    
+        
+**Code Quality**   
+<img width="85%" src="
+https://user-images.githubusercontent.com/31236645/147383045-964967ea-a7ba-4357-9012-1930c58b1806.png
+">
