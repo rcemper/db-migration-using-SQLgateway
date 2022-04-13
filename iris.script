@@ -15,6 +15,6 @@
     ZWRITE gty,sc
     ;
     zn "USER"
-    ; use your module here instead of csvgen
+   zpm "install webterminal"
     halt
 
