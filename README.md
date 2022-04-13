@@ -97,6 +97,4 @@ All migration actions can be executed directly from SMP.
 [Demo Server WebTerminal](https://migration-using-sqlgty.community.intersystems.com/terminal/)    
         
 **Code Quality**   
-<img width="85%" src="
-https://user-images.githubusercontent.com/31236645/147383045-964967ea-a7ba-4357-9012-1930c58b1806.png
-">
+<img width="85%" src="https://openexchange.intersystems.com/mp/img/packages/1785/screenshots/xo8izitp8209zylu2m9oblvkiu4.jpg">
