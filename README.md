@@ -101,8 +101,8 @@ All migration actions can be executed directly from SMP.
 
   [Article on DC](https://community.intersystems.com/post/db-migration-using-sqlgateway)
 
-[Demo Server SMP](https://migration-using-sqlgty.community.intersystems.com/csp/sys/UtilHome.csp)   
-[Demo Server WebTerminal](https://migration-using-sqlgty.community.intersystems.com/terminal/)    
+[Demo Server SMP](https://migration-using-sqlgty.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
+[Demo Server WebTerminal](https://migration-using-sqlgty.demo.community.intersystems.com/terminal/)    
         
 **Code Quality**  this is all setup no code involved   
 <img width="85%" src="https://openexchange.intersystems.com/mp/img/packages/1785/screenshots/xo8izitp8209zylu2m9oblvkiu4.jpg">
