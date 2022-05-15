@@ -12,7 +12,15 @@ provided by [YURI MARX PEREIRA GOMES](https://openexchange.intersystems.com/user
 2. Git project created from: 
     - https://github.com/jdaarevalo/docker_postgres_with_data
     - https://github.com/intersystems-community/iris-docker-zpm-usage-template
-## How to install ##
+
+## Prerequisites
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+
+## Installation 
+Clone/git pull the repo into any local directory
+```
+git https://github.com/isc-at/db-migration-using-SQLgateway.git
+```
 1. Build
 ```
 docker-compose build
