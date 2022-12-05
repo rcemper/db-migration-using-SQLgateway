@@ -23,11 +23,11 @@ services:
       build: 
         context: .
         dockerfile: Dockerfile
-      command: --check-caps false
-      restart: always
-      ports: 
-        - 1972:1972
-        - 52773:52773
-        - 53773:53773
+    restart: always
+    command: --check-caps false --ISCAgent false
+    ports:
+      - 41773:1972
+      - 42773:52773
+      - 53773
       volumes:
         - ./:/irisrun/repo
