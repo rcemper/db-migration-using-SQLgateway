@@ -54,21 +54,21 @@ postgres_1  | 2022-01-02 15:37:27.654 UTC [1] LOG:  database system is ready to 
 All migration actions can be executed directly from SMP.   
 1. Verify the gateway connection in    
    SMP> Administration> Configuraation >Connectivity >SqlGateway_Configuration    
- ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty01.jpg) 
+ ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty01.jpg) 
    - To test Connection click **edit**    
- ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty02.jpg)    
+ ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty02.jpg)    
    - and **Test Connection**    
- ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty03.jpg)    
+ ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty03.jpg)    
    - verify **Connection successful**    
    - Be patient at this point. Postgres Containers sometimes take quite some time to talk to you.   
      wait a little bit, reload the page in browser and try the test again.      
    
 2. Identifying the source tables. In SMP > Change to Namespace USER   
   then step to SMP >Explorers >SQL >Wizards > Data Migration   
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty04.jpg)
+  ![](https://raw.githubusercontent.com/isc-atr/db-migration-using-SQLgateway/master/docs/gty04.jpg)
   
 3. Set required import parameters  
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty05.jpg)
+  ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty05.jpg)
   -  Destination Namespace   
   -  Type = TABLE   
   -  Gateway = postgres ; now the first connection is established and you select 
@@ -76,33 +76,27 @@ All migration actions can be executed directly from SMP.
   -  Tables to migrate = all   
 
 4. Identify target but change schema to be OEX compatible from **public** to **dc_public**   
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty06.jpg)
+  ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty06.jpg)
   - don't forget to click **change all**    
   - we migrate Definitions and Data so both sides are selected   
 
 5. Skipping special setting we use defaults we start the task in background      
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty07.jpg) 
+  ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty07.jpg) 
   
 6. Now we check the results and see everything was working without Errors
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty08.jpg)    
+  ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty08.jpg)    
   You might see errors if tables depend on content not yet migrated.   
   And wait for completions until the status shows **Done** 
   
 7. We terminate the Migration Wizzard and return to normal table view filtered by **dc\***
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty09.jpg)   
+  ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty09.jpg)   
   All 8 tables are visible and show meaningful columns
   
 8. Selecting a table and clicking on **OpenTable** shows resonable contents   
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty10.jpg)   
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty11.jpg)
+  ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty10.jpg)   
+  ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty11.jpg)
   
 9. A look into the related generated Class Defnitions confirms the result and successful completion.
-  ![](https://raw.githubusercontent.com/rcemper/db-migration-using-SQLgateway/master/docs/gty12.jpg)
+  ![](https://raw.githubusercontent.com/isc-at/db-migration-using-SQLgateway/master/docs/gty12.jpg)
 
   [Article on DC](https://community.intersystems.com/post/db-migration-using-sqlgateway)
-
-[Demo Server SMP](https://migration-using-sqlgty.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
-[Demo Server WebTerminal](https://migration-using-sqlgty.demo.community.intersystems.com/terminal/)    
-        
-**Code Quality**  this is all setup no code involved   
-<img width="85%" src="https://openexchange.intersystems.com/mp/img/packages/1785/screenshots/xo8izitp8209zylu2m9oblvkiu4.jpg">
