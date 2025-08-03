@@ -14,7 +14,8 @@
     set sc=gty.%Save()
     ZWRITE gty,sc
     ;
+    zpm "install iterm"
     zn "USER"
-   zpm "install webterminal"
+    ; zpm "install webterminal"
     halt
 
