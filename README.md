@@ -1,8 +1,9 @@
-<p align="right"><img src="https://github.com/isc-at/CPIPE/blob/master/archived.jpg"/></p>
+<img src="https://community.intersystems.com/sites/default/files/inline/images/archived.gif" width=100></img>
+<b>&nbsp;no maintenance or update</b>  
 
 # db-migration-using-SQLgateway #  
 Sample repository to show how to migrate from PostgreSQL to InterSystems IRIS    
-**using SQLgateway** in differnce to using an external tool as DBeaver or similar.   
+**using SQLgateway** in difference to using an external tool as DBeaver or similar.   
 I especially try to demonstrate the comfort in fitting underlaying naming limitations. 
 ## Credits ##
 0. OEX package [migration-pg-iris-dataset](https://openexchange.intersystems.com/package/migration-pg-iris-dataset) 
