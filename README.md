@@ -54,6 +54,9 @@ postgres_1  | 2022-01-02 15:37:27.654 UTC [1] LOG:  database system is ready to 
    jdbcdriver for Linux is included in this repo   
    In order to make this demo faster, size of tables to migrate have been shrinked a bit.    
 ## How to test ##
+SMP is available here 
+     http://localhost:42773/csp/sys/UtilHome.csp    
+     
 All migration actions can be executed directly from SMP.   
 1. Verify the gateway connection in    
    SMP> Administration> Configuraation >Connectivity >SqlGateway_Configuration    
